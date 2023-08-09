@@ -11,10 +11,12 @@ const theme = createTheme({
     fontFamily: "Dax, Arial, sans-serif", // Substitua "Arial, sans-serif" pelas fontes de fallback desejadas
   },
 });
-
+interface Category {
+  nome: string;
+}
 export default function SimpleBottomNavigation() {
-  const [value, setValue] = React.useState(0);
-  const [category, setCategory] = React.useState([]);
+  // const [value, setValue] = React.useState(0);
+  const [category, setCategory] = React.useState<Category[]>([]);
   const [categorySelected, setCategorySelected] = React.useState("");
 
   async function getCategorys() {
@@ -31,12 +33,12 @@ export default function SimpleBottomNavigation() {
       <Box sx={{ width: "81.4%", mt: 2 }}>
         <BottomNavigation
           showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
+          // value={value}
+          // onChange={(newValue) => {
+          //   setValue(newValue);
+          // }}
         >
-          {category.map((category: any) => (
+          {category.map((category) => (
             <BottomNavigationAction
               label={category.nome}
               onClick={() => setCategorySelected(category.nome)}

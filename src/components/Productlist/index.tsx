@@ -16,7 +16,20 @@ import { AiOutlineStar } from "react-icons/ai";
 import "./product.css";
 //import SimpleBottomNavigation from "../Category";
 
-export default function ProductsList({ categories }: any) {
+interface PropsList {
+  categories: string;
+}
+
+interface ProductsFilt {
+  categoria: string;
+  id: number;
+  urlImagem: string;
+  titulo: string;
+  descricao: string;
+  preco: string;
+}
+
+export default function ProductsList({ categories }: PropsList) {
   const navigate = useNavigate();
   const [products, setproducts] = useState([]);
 
@@ -27,7 +40,7 @@ export default function ProductsList({ categories }: any) {
 
   useEffect(() => {
     GetProduts();
-    const ProductsFiltered = products.filter((prod) =>
+    const ProductsFiltered = products.filter((prod: ProductsFilt) =>
       prod.categoria === categories ? prod : "Sem categoria"
     );
     console.log(ProductsFiltered);
@@ -38,7 +51,7 @@ export default function ProductsList({ categories }: any) {
       <Flex justifyContent="center">
         <Flex w="85%" direction="row" wrap="wrap" justifyContent="center">
           {products ? (
-            products.map((product: any) => (
+            products.map((product: ProductsFilt) => (
               <>
                 {categories === "Todas Opções" || categories === "" ? (
                   <Card

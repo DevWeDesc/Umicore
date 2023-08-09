@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 interface PropsModal {
   isOpen: boolean;
-  onClose: () => boolean;
+  onClose: () => void;
   children: ReactNode;
 }
 

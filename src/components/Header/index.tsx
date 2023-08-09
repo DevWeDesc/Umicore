@@ -15,7 +15,8 @@ import { useNavigate } from "react-router-dom";
 import "./header.css";
 
 export default function Header() {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
   const navigate = useNavigate();
   const closeModal = () => {
     setModalOpen(false);
@@ -52,6 +53,7 @@ export default function Header() {
             >
               Sair
             </Button>
+
             <GenericModal isOpen={modalOpen} onClose={closeModal}>
               <ModalContent>
                 <ModalHeader>

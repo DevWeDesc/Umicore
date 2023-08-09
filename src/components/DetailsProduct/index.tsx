@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Box, Button, ChakraProvider, Flex, Heading } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Card, CardBody, Image, Stack, Text } from "@chakra-ui/react";
@@ -8,8 +9,16 @@ import { BsCashCoin } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import "./details.css";
 
+interface Product {
+  id: number;
+  urlImagem: string;
+  titulo: string;
+  descricao: string;
+  preco: string;
+}
+
 export default function DetailsProduct() {
-  const [product, setproduct] = useState<any>([]);
+  const [product, setproduct] = useState({} as Product);
   const { id } = useParams();
 
   async function GetProduts() {
