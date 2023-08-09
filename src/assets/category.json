@@ -1,0 +1,39 @@
+{
+  "categorias": [
+    {
+      "id": 0,
+      "nome": "Todas Opções",
+      "descricao": "Smartphones, laptops, tablets, câmeras, acessórios eletrônicos, gadgets, dispositivos inteligentes"
+    },
+    {
+      "id": 1,
+      "nome": "Eletrônicos e Tecnologia",
+      "descricao": "Smartphones, laptops, tablets, câmeras, acessórios eletrônicos, gadgets, dispositivos inteligentes"
+    },
+    {
+      "id": 2,
+      "nome": "Acessórios de Moda",
+      "descricao": "Roupas masculinas, femininas e infantis, calçados, acessórios de moda, joias, bolsas, produtos de beleza"
+    },
+    {
+      "id": 3,
+      "nome": "Móveis e Decoração",
+      "descricao": "Móveis, decoração de interiores, utensílios domésticos, artigos para cama, mesa e banho, iluminação, produtos de limpeza"
+    },
+    {
+      "id": 4,
+      "nome": "Esportes e Lazer",
+      "descricao": "Equipamentos esportivos, roupas de academia, calçados esportivos, acessórios para atividades ao ar livre, jogos de tabuleiro"
+    },
+    {
+      "id": 5,
+      "nome": "Saúde e Bem-Estar",
+      "descricao": "Vitaminas, suplementos, produtos naturais, equipamentos de fitness, produtos para cuidados pessoais, produtos de beleza"
+    },
+    {
+      "id": 6,
+      "nome": "Livros e Entretenimento",
+      "descricao": "Livros impressos e digitais, eBooks, jogos de vídeo game, filmes, música, brinquedos, instrumentos musicais"
+    }
+  ]
+}

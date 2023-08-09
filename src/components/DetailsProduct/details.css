@@ -1,0 +1,27 @@
+.css-152f6ep {
+  width: 30%;
+}
+@media (min-width: 401px) {
+  .css-a8eulv {
+    object-fit: contain;
+  }
+}
+@media (max-width: 400px) {
+  .css-1e9fr5m {
+    width: 100%;
+  }
+  .css-a8eulv {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .css-43kdt8 {
+    font-size: 14px;
+  }
+  .css-152f6ep {
+    min-width: 50%;
+  }
+  .css-5m6df0 {
+    width: 50%;
+  }
+}

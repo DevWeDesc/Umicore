@@ -1,0 +1,12 @@
+@media (min-width: 401px) {
+  .css-bpk0so {
+    max-width: 1685px;
+    min-width: 1685px;
+  }
+}
+@media (max-width: 400px) {
+  .css-bpk0so {
+    max-width: 400px;
+    min-width: 400px;
+  }
+}
