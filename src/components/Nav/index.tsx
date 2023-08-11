@@ -21,6 +21,7 @@ import { Button } from "@chakra-ui/react";
 //import { RealoadContext } from "../../context/reloadContext";
 // import { useReloadContext } from "../../context/reloadContext";
 import { IoIosAdd } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 // const Schema = object({
 //   photo: string().required("O Link é Obrigatório"),
@@ -41,6 +42,7 @@ import { IoIosAdd } from "react-icons/io";
 
 export default function Nav() {
   const [modalOpen, setModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   // const { setReload } = useReloadContext();
   //   //const [reload, setReload] = useState(false);
@@ -122,7 +124,10 @@ export default function Nav() {
           Dashboard
         </Text>
       </a> */}
-      <a href="/Home" style={{ width: "100%" }}>
+      <a
+        onClick={() => navigate("/Home")}
+        style={{ width: "100%", cursor: "pointer" }}
+      >
         <Text w="100%" fontSize="18">
           Listagem de Produtos
         </Text>
@@ -148,7 +153,7 @@ export default function Nav() {
       <GenericModal isOpen={modalOpen} onClose={closeModal}>
         <ModalContent>
           {/* <form onSubmit={handleSubmit(onSubmit)}> */}
-          <ModalHeader>Traga sua Ideia para a Vida!</ModalHeader>
+          <ModalHeader>Reduza, reuse e recicle!</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <FormLabel>Adicionar Foto do seu produto</FormLabel>
