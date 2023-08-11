@@ -153,12 +153,14 @@ export default function Nav() {
       <GenericModal isOpen={modalOpen} onClose={closeModal}>
         <ModalContent>
           {/* <form onSubmit={handleSubmit(onSubmit)}> */}
-          <ModalHeader>Reduza, reuse e recicle!</ModalHeader>
+          <ModalHeader fontFamily="Dax">Reduza, reuse e recicle!</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <FormLabel>Adicionar Foto do seu produto</FormLabel>
+            <FormLabel fontFamily="Dax">
+              Adicionar Foto do seu produto
+            </FormLabel>
             <Stack>
-              <Flex border="1px solid black" rounded="7px">
+              <Flex border="1px solid #e3e3e3" rounded="7px">
                 <Input
                   border="0"
                   borderRight="none"
@@ -178,7 +180,9 @@ export default function Nav() {
               </Flex>
               {/* <Text color="red.600">{errors.photo?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Titulo do seu produto</FormLabel>
+            <FormLabel mt="5" fontFamily="Dax">
+              Titulo do seu produto
+            </FormLabel>
             <Stack>
               <Input
                 // {...register("title")}
@@ -187,7 +191,9 @@ export default function Nav() {
               />
               {/* <Text color="red.600">{errors.title?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Descrição do seu produto</FormLabel>
+            <FormLabel mt="5" fontFamily="Dax">
+              Descrição do seu produto
+            </FormLabel>
             <Stack>
               <Input
                 // {...register("description")}
@@ -196,18 +202,24 @@ export default function Nav() {
               />
               {/* <Text color="red.600">{errors.description?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Preço do seu produto</FormLabel>
+            <FormLabel mt="5" fontFamily="Dax">
+              Preço do seu produto
+            </FormLabel>
             <Stack>
               <Input
+                fontFamily="Dax"
                 // {...register("price")}
                 focusBorderColor="lime"
                 placeholder="Insira o Preço do seu produto"
               />
               {/* <Text color="red.600">{errors.price?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Categoria do seu produto</FormLabel>
+            <FormLabel mt="5" fontFamily="Dax">
+              Categoria do seu produto
+            </FormLabel>
             <Stack>
               <Select
+                fontFamily="Dax"
                 // {...register("category")}
                 focusBorderColor="lime"
                 placeholder="Insira a Categoria do seu produto"
