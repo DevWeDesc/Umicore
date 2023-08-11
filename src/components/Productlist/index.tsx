@@ -55,7 +55,7 @@ export default function ProductsList({ categories }: PropsList) {
           wrap="wrap"
           justifyContent="left"
           gap="4"
-          minW="1320px"
+          minW="1230px"
         >
           {produtos ? (
             produtos.map((product: ProductsFilt) => (
@@ -63,7 +63,7 @@ export default function ProductsList({ categories }: PropsList) {
                 {categories === "Todas Opções" || categories === "" ? (
                   <Card
                     cursor="pointer"
-                    w="415px"
+                    w="390px"
                     maxW="lg"
                     onClick={() => navigate(`/Product/${product.id}`)}
                   >
