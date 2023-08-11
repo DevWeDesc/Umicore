@@ -151,48 +151,48 @@ export default function Nav() {
           <ModalHeader>Traga sua Ideia para a Vida!</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <FormLabel>link da Foto do seu produto</FormLabel>
+            <FormLabel>Adicionar Foto do seu produto</FormLabel>
             <Stack>
               <Input
                 // {...register("photo")}
                 focusBorderColor="lime"
-                placeholder="Insira o link Foto do seu produto"
+                placeholder="Adicionar Foto do seu produto"
               />
               {/* <Text color="red.600">{errors.photo?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Titulo do seu Anuncio</FormLabel>
+            <FormLabel mt="5">Titulo do seu produto</FormLabel>
             <Stack>
               <Input
                 // {...register("title")}
                 focusBorderColor="lime"
-                placeholder="Insira o Titulo do seu Anuncio"
+                placeholder="Insira o Titulo do seu produto"
               />
               {/* <Text color="red.600">{errors.title?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Descrição do seu Produto</FormLabel>
+            <FormLabel mt="5">Descrição do seu produto</FormLabel>
             <Stack>
               <Input
                 // {...register("description")}
                 focusBorderColor="lime"
-                placeholder="Insira a Descrição do seu Produto"
+                placeholder="Insira a Descrição do seu produto"
               />
               {/* <Text color="red.600">{errors.description?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Preço do seu Produto</FormLabel>
+            <FormLabel mt="5">Preço do seu produto</FormLabel>
             <Stack>
               <Input
                 // {...register("price")}
                 focusBorderColor="lime"
-                placeholder="Insira o Preço do seu Produto"
+                placeholder="Insira o Preço do seu produto"
               />
               {/* <Text color="red.600">{errors.price?.message}</Text> */}
             </Stack>
-            <FormLabel mt="5">Categoria do seu Produto</FormLabel>
+            <FormLabel mt="5">Categoria do seu produto</FormLabel>
             <Stack>
               <Select
                 // {...register("category")}
                 focusBorderColor="lime"
-                placeholder="Insira a Categoria do seu Produto"
+                placeholder="Insira a Categoria do seu produto"
               >
                 <option value="Eletrônicos e Tecnologia">
                   Eletrônicos e Tecnologia
