@@ -50,7 +50,7 @@ export default function FormLogin() {
           colorScheme="blue"
           onClick={() => {
             if (
-              user.email === "desenvolvimento@wedesc.com" &&
+              user.email === "desenvolvimento@gopack.com" &&
               user.password === "123"
             ) {
               toast.success("Logado com sucesso!", {

@@ -1,8 +1,8 @@
 import { useEffect /*, useState */ } from "react";
 //import { api } from "../../lib/axios";
-import { produtos } from './products'
+import { produtos } from "./products";
 import {
-  Box,
+  //Box,
   Button,
   ButtonGroup,
   ChakraProvider,
@@ -27,14 +27,12 @@ interface ProductsFilt {
   titulo?: string;
   categoria?: string;
   descricao?: string;
-  preco?: number;
+  preco?: string;
 }
 
 export default function ProductsList({ categories }: PropsList) {
   const navigate = useNavigate();
   //const [products, setproducts] = useState([]);
-
- 
 
   // async function GetProduts() {
   //   const products = await api.get("/src/assets/listagem.json");
@@ -50,17 +48,23 @@ export default function ProductsList({ categories }: PropsList) {
   }, []);
   return (
     <ChakraProvider>
-      <Box w="81.5%" bg="white"></Box>
-      <Flex justifyContent="center">
-        <Flex w="85%" direction="row" wrap="wrap" justifyContent="center">
+      <Flex justifyContent="center" mt="4">
+        <Flex
+          w="100%"
+          direction="row"
+          wrap="wrap"
+          justifyContent="left"
+          gap="4"
+          minW="1320px"
+        >
           {produtos ? (
             produtos.map((product: ProductsFilt) => (
               <>
                 {categories === "Todas Opções" || categories === "" ? (
                   <Card
                     cursor="pointer"
-                    maxW="md"
-                    m="2"
+                    w="415px"
+                    maxW="lg"
                     onClick={() => navigate(`/Product/${product.id}`)}
                   >
                     <CardBody display="flex" flexDirection="column">
@@ -102,8 +106,8 @@ export default function ProductsList({ categories }: PropsList) {
                   product.categoria == categories && (
                     <Card
                       cursor="pointer"
-                      maxW="md"
-                      m="2"
+                      w="415px"
+                      maxW="lg"
                       onClick={() => navigate(`/Product/${product.id}`)}
                     >
                       <CardBody display="flex" flexDirection="column">
@@ -116,7 +120,9 @@ export default function ProductsList({ categories }: PropsList) {
                         <Stack mt="6" spacing="3">
                           <Heading size="md">{product.titulo}</Heading>
                           <Text>
-                            {product?.descricao?.substring(0, 158).concat("...")}
+                            {product?.descricao
+                              ?.substring(0, 158)
+                              .concat("...")}
                           </Text>
                           <Text
                             color="green"

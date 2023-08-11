@@ -158,9 +158,9 @@ export default function DetailsProduct() {
 
   return (
     <ChakraProvider>
-      <Box mt="20" mb="20">
+      <Box mt="12">
         <Flex alignItems="center" direction="column">
-          <Flex w="85%">
+          <Flex w="100%" pr="10">
             <Card
               h="100%"
               p="8"

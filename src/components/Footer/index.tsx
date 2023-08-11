@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <ChakraProvider>
       <Flex
-        mt="7rem"
         w="100%"
         bg="#031d33"
         h="8rem"
@@ -20,7 +19,7 @@ export default function Footer() {
         <Text fontWeight="bold">
           Copyright © 2023 - Umicore. Todos os direitos reservados
         </Text>
-        <Text fontWeight="bold">Powered By WeDesc</Text>
+        <Text fontWeight="bold">Powered By GoPack</Text>
         <Flex gap="4" textDecoration="underline">
           <a href="">Termos de Uso</a>
           <a href="">Politicas de Privacidade</a>

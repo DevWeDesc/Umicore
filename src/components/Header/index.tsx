@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   return (
-    <Flex maxH="7rem" w="80%" alignItems="center">
+    <Flex maxH="7rem" w="100%" alignItems="center" justifyContent="center">
       <Flex w="15rem">
         <img
           src={Logo}
@@ -42,8 +42,8 @@ export default function Header() {
           justifyContent="space-between"
         >
           <Box textAlign="center" fontWeight="semibold">
-            <Text>Olá WeDesc!</Text>
-            <Text>desenvolvimento@wedesc.com</Text>
+            <Text>Olá GoPack!</Text>
+            <Text>desenvolvimento@gopack.com</Text>
           </Box>
           <Flex alignItems="center">
             <Button

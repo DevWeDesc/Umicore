@@ -75,7 +75,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ width: "81.4%", mt: 2 }}>
+      <Box sx={{ width: "97%", mt: 6.1 }}>
         <BottomNavigation
           showLabels
           // value={value}
