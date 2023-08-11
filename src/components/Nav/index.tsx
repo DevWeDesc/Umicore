@@ -158,11 +158,24 @@ export default function Nav() {
           <ModalBody>
             <FormLabel>Adicionar Foto do seu produto</FormLabel>
             <Stack>
-              <Input
-                // {...register("photo")}
-                focusBorderColor="lime"
-                placeholder="Adicionar Foto do seu produto"
-              />
+              <Flex border="1px solid black" rounded="7px">
+                <Input
+                  border="0"
+                  borderRight="none"
+                  // {...register("photo")}
+                  focusBorderColor="lime"
+                  placeholder="Adicionar Foto do seu produto"
+                />
+                <Input
+                  border="0"
+                  px="0"
+                  w="205px"
+                  pt="5px"
+                  fontWeight="semibold"
+                  type="file"
+                  style={{ border: "0" }}
+                />
+              </Flex>
               {/* <Text color="red.600">{errors.photo?.message}</Text> */}
             </Stack>
             <FormLabel mt="5">Titulo do seu produto</FormLabel>
