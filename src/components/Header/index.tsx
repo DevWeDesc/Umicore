@@ -42,7 +42,7 @@ export default function Header() {
           justifyContent="space-between"
         >
           <Box textAlign="center" fontWeight="semibold">
-            <Text>Olá GoPack!</Text>
+            <Text fontFamily="Dax">Olá GoPack!</Text>
             <Text>desenvolvimento@gopack.com</Text>
           </Box>
           <Flex alignItems="center">
