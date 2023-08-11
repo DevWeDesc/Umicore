@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { Flex, Grid, GridItem } from "@chakra-ui/react";
 import Header from "../Header";
 import Nav from "../Nav";
