@@ -49,10 +49,10 @@ export default function FormLogin() {
           mt="4"
           colorScheme="blue"
           onClick={() => {
-            if (
-              user.email === "desenvolvimento@gopack.com" &&
-              user.password === "123"
-            ) {
+            // if (
+            //   user.email === "desenvolvimento@gopack.com" &&
+            //   user.password === "123"
+            // ) {
               toast.success("Logado com sucesso!", {
                 position: "top-right",
                 autoClose: 5000,
@@ -64,18 +64,18 @@ export default function FormLogin() {
                 theme: "light",
               });
               navigate("Home");
-            } else {
-              toast.error("E-mail ou Senha Incorreto!", {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-              });
-            }
+            // } else {
+            //   toast.error("E-mail ou Senha Incorreto!", {
+            //     position: "top-right",
+            //     autoClose: 5000,
+            //     hideProgressBar: false,
+            //     closeOnClick: true,
+            //     pauseOnHover: true,
+            //     draggable: true,
+            //     progress: undefined,
+            //     theme: "light",
+            //   });
+            // }
           }}
         >
           Entrar
