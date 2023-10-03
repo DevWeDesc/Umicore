@@ -64,17 +64,18 @@ export default function FormLogin() {
                 theme: "light",
               });
               navigate("Home");
-            } else {
-              toast.error("E-mail ou Senha Incorreto!", {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-              });
+              // } else {
+              //   toast.error("E-mail ou Senha Incorreto!", {
+              //     position: "top-right",
+              //     autoClose: 5000,
+              //     hideProgressBar: false,
+              //     closeOnClick: true,
+              //     pauseOnHover: true,
+              //     draggable: true,
+              //     progress: undefined,
+              //     theme: "light",
+              //   });
+              // }
             }
           }}
         >
