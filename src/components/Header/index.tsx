@@ -1,7 +1,7 @@
 import { Box, Button, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import { Text } from "@chakra-ui/react";
-import Logo from "../../assets/Logo_Umicore_2017.png";
+import Logo from "../../assets/Logo_Umicore_2017 (2).png";
 import { GenericModal } from "../Modal";
 import {
   ModalContent,
@@ -42,8 +42,8 @@ export default function Header() {
           justifyContent="space-between"
         >
           <Box textAlign="center" fontWeight="semibold">
-            <Text fontFamily="Dax">Olá GoPack!</Text>
-            <Text>desenvolvimento@gopack.com</Text>
+            <Text fontFamily="Dax">Olá!</Text>
+            <Text>desenvolvimento@wedesc.com</Text>
           </Box>
           <Flex alignItems="center">
             <Button

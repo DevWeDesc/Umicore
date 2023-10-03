@@ -10,7 +10,7 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import Logo from "../../assets/Logo_Umicore_2017.png";
+import Logo from "../../assets/Logo_Umicore_2017 (2).png";
 
 interface IUser {
   email: string;
@@ -50,7 +50,7 @@ export default function FormLogin() {
           colorScheme="blue"
           onClick={() => {
             if (
-              user.email === "desenvolvimento@gopack.com" &&
+              user.email === "desenvolvimento@wedesc.com" &&
               user.password === "123"
             ) {
               toast.success("Logado com sucesso!", {
